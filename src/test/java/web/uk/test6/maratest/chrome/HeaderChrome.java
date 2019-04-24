@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class HeaderChrome extends BaseTest {
 
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Sport in Header
     public void translationSportInHeader() {
 
@@ -15,7 +15,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test(priority = 20)
+    @Test(groups = { "headerTest" })
     //наличие Live in Header
     public void translationLiveInHeader() {
 
@@ -23,7 +23,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Toto in Header
     public void translationTotoInHeader() {
 
@@ -31,7 +31,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Casino in Header
     public void translationCasinoInHeader() {
 
@@ -39,7 +39,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Live Casino in Header
     public void translationLiveCasinoInHeader() {
 
@@ -47,7 +47,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Constructor in Header
     public void translationConstructorCasinoInHeader() {
 
@@ -55,7 +55,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Bingo in Header
     public void translationBingoInHeader() {
 
@@ -63,7 +63,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Financials in Header
     public void translationFinancialInHeader() {
 
@@ -71,7 +71,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Lost Password in Header
     public void translationLostPassword() {
 
@@ -79,7 +79,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Help in Header
     public void translationHelp() {
 
@@ -87,7 +87,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Language in Header
     public void translationLanguage() {
 
@@ -95,7 +95,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Results&Statistic in Header
     public void translationResults() {
 
@@ -103,7 +103,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Settings in Header
     public void translationSettings() {
 
@@ -111,7 +111,7 @@ public class HeaderChrome extends BaseTest {
 
     }
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Mobile in Header
     public void isMobilePresent() {
 
@@ -120,7 +120,7 @@ public class HeaderChrome extends BaseTest {
     }
 
 
-    @Test
+    @Test(groups = { "headerTest" })
     //наличие Maraathon in Header
     public void isMarathonPresent() {
 

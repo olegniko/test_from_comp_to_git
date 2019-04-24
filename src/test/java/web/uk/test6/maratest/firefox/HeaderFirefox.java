@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class HeaderFirefox extends BaseTestFirefox {
 
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Sport in Header
     public void translationSportInHeader() {
 
@@ -15,7 +15,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test(priority = 20)
+    @Test(groups = { "headerTestFirefox" })
     //наличие Live in Header
     public void translationLiveInHeader() {
 
@@ -23,7 +23,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Toto in Header
     public void translationTotoInHeader() {
 
@@ -31,7 +31,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Casino in Header
     public void translationCasinoInHeader() {
 
@@ -39,7 +39,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Live Casino in Header
     public void translationLiveCasinoInHeader() {
 
@@ -47,7 +47,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Constructor in Header
     public void translationConstructorCasinoInHeader() {
 
@@ -55,7 +55,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Bingo in Header
     public void translationBingoInHeader() {
 
@@ -63,7 +63,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Financials in Header
     public void translationFinancialInHeader() {
 
@@ -71,7 +71,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Lost Password in Header
     public void translationLostPassword() {
 
@@ -79,7 +79,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Help in Header
     public void translationHelp() {
 
@@ -87,7 +87,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Language in Header
     public void translationLanguage() {
 
@@ -95,7 +95,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Results&Statistic in Header
     public void translationResults() {
 
@@ -103,7 +103,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Settings in Header
     public void translationSettings() {
 
@@ -111,7 +111,7 @@ public class HeaderFirefox extends BaseTestFirefox {
 
     }
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Mobile in Header
     public void isMobilePresent() {
 
@@ -120,7 +120,7 @@ public class HeaderFirefox extends BaseTestFirefox {
     }
 
 
-    @Test
+    @Test(groups = { "headerTestFirefox" })
     //наличие Maraathon in Header
     public void isMarathonPresent() {
 

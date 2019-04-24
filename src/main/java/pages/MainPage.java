@@ -31,6 +31,7 @@ public  class MainPage extends BasePage {
 		String url = "https://web.uk.test6.maratest.info/%lan%/".replace("%lan%", lan);
 
 		driver.get(url);
+		driver.manage().window().maximize();
 	}
 	public void close()  {
 
