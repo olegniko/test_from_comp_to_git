@@ -10,7 +10,7 @@ public class FirefoxDriverFactory extends WebDriverFactory {
     @Override
     public WebDriver create(){
 
-        System.setProperty("webdriver.gecko.driver","e:/projects/learning_auto_youtube/src/main/resources/geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver","./src/main/resources/geckodriver.exe");
 
         return new FirefoxDriver();
     }

@@ -1,6 +1,5 @@
-package web.uk.test6.maratest.chrome;
+package web.uk.test6.maratest.info;
 
-import helper.factory.WebDriverSingleton;
 import org.testng.annotations.*;
 import pages.MainPage;
 
@@ -18,11 +17,12 @@ public class BaseTest {
 
 
     @BeforeSuite
-    public  void setUp() throws MalformedURLException {
+    @Parameters({"language","browser"})
+    public  void setUp(String language,String browser) throws MalformedURLException {
 
-        locale = new Locale("en");
+        locale = new Locale(language);
         exampleBundle = ResourceBundle.getBundle("ResourceBundle",locale);
-        mainPage = new MainPage("chrome");
+        mainPage = new MainPage(browser);
         mainPage.open(locale);
 
 

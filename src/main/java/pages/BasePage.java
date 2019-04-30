@@ -157,6 +157,28 @@ public abstract  class BasePage {
 		return MarathonIcon.isDisplayed();
 	}
 
+	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[1]/span")
+	protected WebElement AboutUs;
+
+	public String getAboutUs(){
+		return AboutUs.getText();
+	}
+
+
+	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[2]/span")
+	protected WebElement PrivacyPolicy ;
+
+	public String getPrivacyPolicy(){
+		return PrivacyPolicy.getText();
+	}
+
+	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[3]/span")
+	protected WebElement ResponsibleGambling;
+
+	public String getResponsibleGambling(){
+		return ResponsibleGambling.getText();
+	}
+
 
 	public boolean isPresentBalanceInHeader(){
 

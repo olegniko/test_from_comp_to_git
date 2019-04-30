@@ -7,21 +7,26 @@ import java.net.MalformedURLException;
 public class WebDriverSingleton {
 
 
-    public static WebDriver init(String browserName) throws MalformedURLException {
+    public static WebDriver init(String browser) throws MalformedURLException {
 
         WebDriverFactory factory;
 
 
-        if("chrome".equalsIgnoreCase(browserName)){
+        if("info".equalsIgnoreCase(browser)){
 
             factory = new ChromeDriverFactory();
 
        }
-        else if("firefox".equalsIgnoreCase(browserName)) {
+        else if("firefox".equalsIgnoreCase(browser)) {
 
             factory = new FirefoxDriverFactory();
 
        }
+        else if("opera".equalsIgnoreCase(browser)) {
+
+            factory = new OperaDriverFactory();
+
+        }
         else{
 
             factory = new ChromeDriverFactory();

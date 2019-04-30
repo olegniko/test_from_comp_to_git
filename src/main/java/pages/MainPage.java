@@ -1,10 +1,7 @@
 package pages;
 
 import helper.factory.WebDriverSingleton;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-
-
 import java.net.MalformedURLException;
 import java.util.Locale;
 
@@ -12,9 +9,9 @@ import java.util.Locale;
 public  class MainPage extends BasePage {
 
 
-	public MainPage(String browserName) throws MalformedURLException {
+	public MainPage(String browser) throws MalformedURLException {
 
-		driver = WebDriverSingleton.init(browserName);
+		driver = WebDriverSingleton.init(browser);
 		PageFactory.initElements(driver, this);
 	}
 
