@@ -180,6 +180,38 @@ public abstract  class BasePage {
 	}
 
 
+	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[4]/span")
+	protected WebElement TermsAndConditions;
+
+	public String getTermsAndConditions(){
+		return TermsAndConditions.getText();
+	}
+
+	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[5]/span")
+	protected WebElement ContactUs;
+
+	public String getContactUs(){
+		return ContactUs.getText();
+	}
+
+	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[6]/span")
+	protected WebElement Payments;
+
+	public String getPayments(){
+		return Payments.getText();
+	}
+
+	@FindBy(xpath = "//*[@id=\"footer\"]/div/div[1]/ul/li[7]/a")
+	protected WebElement MobileSite;
+
+	public String getMobileSite(){
+		return MobileSite.getText();
+	}
+
+
+
+
+
 	public boolean isPresentBalanceInHeader(){
 
 		return (header_balance!=null);

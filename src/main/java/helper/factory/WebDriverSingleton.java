@@ -27,6 +27,11 @@ public class WebDriverSingleton {
             factory = new OperaDriverFactory();
 
         }
+        else if("edge".equalsIgnoreCase(browser)) {
+
+            factory = new EdgeDriverFactory();
+
+        }
         else{
 
             factory = new ChromeDriverFactory();

@@ -33,6 +33,38 @@ public class Footer extends BaseTest {
 
     }
 
+    @Test(groups = {"footerTestChrome", "footerTestOpera", "footerTestFirefox"})
+    //наличие Terms and Conditions in Footer
+    public void translationTermsAndConditions() {
+
+        assertEquals(mainPage.getTermsAndConditions(), exampleBundle.getString("terms_and_conditions"));
+
+    }
+
+    @Test(groups = {"footerTestChrome", "footerTestOpera", "footerTestFirefox"})
+    //наличие Contact Us in Footer
+    public void translationContactUs() {
+
+        assertEquals(mainPage.getContactUs(), exampleBundle.getString("contact_us"));
+
+    }
+
+    @Test(groups = {"footerTestChrome", "footerTestOpera", "footerTestFirefox"})
+    //наличие Payments in Footer
+    public void translationPayments() {
+
+        assertEquals(mainPage.getPayments(), exampleBundle.getString("payments"));
+
+    }
+
+    @Test(groups = {"footerTestChrome", "footerTestOpera", "footerTestFirefox"})
+    //наличие Mobile Site in Footer
+    public void translationMobileSite() {
+
+        assertEquals(mainPage.getMobileSite(), exampleBundle.getString("mobile_site"));
+
+    }
+
 
 
 }
