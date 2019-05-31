@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+    <suite name = "chrome">
+    <parameter name="language"  value="de" />
+    <parameter name="browser"  value="edge" />
+
+    <test name="TestCase4">
+        <classes>
+
+
+            <class name="web.uk.test6.maratest.info.Footer">
+            </class>
+
+        </classes>
+    </test>
+
+
+
+</suite>
+
+
+
+
